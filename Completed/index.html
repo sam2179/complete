@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./css/app.min.css" rel="stylesheet">
+    <title>Spagetti</title>
+    <link rel="icon" href="./Images/logo.png" type="image/png">
+</head>
+<style>
+    .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        background-color: #551d6b;
+    }
+
+    .loader {
+        display: inline-block;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="loader-wrapper">
+        <video playsinline autoplay muted loop>
+            <source src="./Images/animation4.mp4" type="video/mp4" class="loader">
+        </video>
+    </div>
+    <article>
+        <!--Main Navigation-->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="./index.html"><img src="./Images/logo.png" width="75px" height="100%"
+                            alt="Logo"></a>
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto smooth-scroll d-flex align-items-start align-items-md-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introduction">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#howitworks">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-warning rounded-pill" href="" target="_blank" id="button">DApp</a>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+
+            <div class="overlay"></div>
+            <video playsinline autoplay muted loop>
+                <source src="./Images/animation1.mp4" type="video/mp4">
+            </video>
+
+            <!--Mask-->
+            <div id="intro" class="view lazyload">
+                <div class="mask">
+                    <div class="container d-flex justify-content-center align-items-center h-100">
+                        <!-- <img src="./Images/Ghost1.png" width="35%" class="d-none d-md-block"
+                            style="position: absolute;top: 80px;left: 0%;transform: rotate(-20deg);" alt=""> -->
+                        <div
+                            class="container-introduction d-flex text-center justify-content-center align-items-center flex-column">
+                            <h1 class="text-warning">Happy <br> Halloween</h1>
+                            <p class="mt-2 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque
+                                leo
+                                sem, <br>
+                                malesuada non dui sed, volutpat suscipit neque.</p>
+                            <div class="container-button">
+                                <a class="btn btn-danger rounded-pill">DApp</a>
+                                <a class="btn btn-outline-light rounded-pill">Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Mask-->
+        </header>
+        <!--Main Navigation-->
+        <main>
+            <section class="community-token py-5" id="introduction" data-aos="fade-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 d-flex justify-content-center align-items-start flex-column">
+                            <p class="subtitle">About</p>
+                            <h1>Introduction to Swap</h1>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo
+                                sem,
+                                malesuada non dui sed, volutpat suscipit neque. Donec felis lorem, dignissim a erat
+                                eget,
+                                ultricies dictum elit. Nunc et fermentum mi. Donec fermentum et mauris eu mattis. Aenean
+                                cursus urna sem, et pretium neque rutrum non. Maecenas nec efficitur ligula.</p>
+                            <a href="" class="btn rounded-pill">Get Started</a>
+                        </div>
+                        <div class="col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                            <video playsinline autoplay muted loop>
+                                <source src="./Images/animation2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="community-units py-5" id="howitworks" data-aos="fade-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <video playsinline autoplay muted loop>
+                                <source src="./Images/animation3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-start flex-column">
+                            <p class="subtitle">Working</p>
+                            <h1>How It Works?</h1>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo
+                                sem,
+                                malesuada non dui sed, volutpat suscipit neque.</p>
+                            <ul class="list-unstyled mt-2">
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-4" id="download">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <p class="subtitle">Explore</p>
+                            <h1>Downloads</h1>
+                            <ul class="list-unstyled mt-4 d-flex flex-column flex-md-row">
+                                <li class="d-flex align-items-center flex-column flex-md-row"><a href="#"><i
+                                            class="fab fa-discord fa-lg mr-2"></i>
+                                        Discord</a>
+                                </li>
+                                <li class="d-flex align-items-center flex-column flex-md-row"><a href="#"><i
+                                            class="fab fa-github fa-lg mr-2"></i>
+                                        Github</a>
+                                </li>
+                                <li class="d-flex align-items-center flex-column flex-md-row"><a href="#"><i
+                                            class="fas fa-file fa-lg mr-2"></i> Audit Paper</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-4 py-md-5 page-footer font-small">
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex align-items-center flex-column">
+                    <img src="./Images/logo.png" width="25%" class="mb-2 logo" alt="Footer">
+                    <small class="d-block mb-3 text-muted">© 2022 – Spagetti</small>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="font-weight-bold">Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Home</a></li>
+                        <li><a class="text-muted" href="#introduction">Introduction</a></li>
+                        <li><a class="text-muted" href="#howitworks">How it works?</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="font-weight-bold">Downloads</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Discord</a></li>
+                        <li><a class="text-muted" href="#">Github</a></li>
+                        <li><a class="text-muted" href="#">Audit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </article>
+
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded');
+        });
+    </script>
+</body>
+
+</html>
